@@ -1,4 +1,6 @@
 import React from "react";
+import { buyCar } from "../store";
+import { connect } from "react-redux";
 
 const CarsContainer = () => {
   return (
@@ -9,4 +11,16 @@ const CarsContainer = () => {
   );
 };
 
-export default CarsContainer;
+const mapStateToProps = (state) => {
+  return {
+    availableCars: state.availableCars,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    buyCar: () => dispatch(buyCar()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CarsContainer);
