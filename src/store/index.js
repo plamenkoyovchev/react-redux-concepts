@@ -1,1 +1,3 @@
 export { buyCar } from "./cars/carActions";
+
+export { buyMotor } from "./motors/motorActions";
