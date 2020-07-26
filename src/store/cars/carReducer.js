@@ -11,8 +11,6 @@ const carReducer = (state = initialState, action) => {
         case carActionTypes.BUY_CAR:
             return {
                 ...state,
-                loading: true,
-                error: '',
                 availableCars: state.availableCars - 1
             };
         default:
