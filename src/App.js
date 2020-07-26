@@ -6,6 +6,7 @@ import store from "./store/store";
 
 import CarsContainer from "./components/CarsContainer";
 import HooksCarContainer from './components/HooksCarContainer';
+import MotorsContainer from './components/MotorsContainer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <CarsContainer />
         <HooksCarContainer />
+        <MotorsContainer />
       </div>
     </Provider>
   );
