@@ -7,6 +7,7 @@ import store from "./store/store";
 import CarsContainer from "./components/CarsContainer";
 import HooksCarContainer from './components/HooksCarContainer';
 import MotorsContainer from './components/MotorsContainer';
+import HooksMotorContainer from './components/HooksMotorContainer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <CarsContainer />
         <HooksCarContainer />
         <MotorsContainer />
+        <HooksMotorContainer />
       </div>
     </Provider>
   );
