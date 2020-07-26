@@ -14,7 +14,7 @@ const CarsContainer = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    availableCars: state.availableCars,
+    availableCars: state.cars.availableCars,
   };
 };
 

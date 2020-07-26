@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { buyCar } from "../store";
 
 const HooksCarContainer = () => {
-  const availableCars = useSelector((state) => state.availableCars);
+  const availableCars = useSelector((state) => state.cars.availableCars);
   const dispatch = useDispatch();
   return (
     <>
