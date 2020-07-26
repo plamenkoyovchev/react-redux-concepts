@@ -9,7 +9,7 @@ const HooksCarContainer = () => {
   return (
     <>
       <h2>Hooks Available Cars - {availableCars}</h2>
-      <button onClick={() => dispatch(buyCar)}>Buy Car</button>
+      <button onClick={() => dispatch(buyCar())}>Buy Car</button>
     </>
   );
 };
