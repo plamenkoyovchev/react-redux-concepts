@@ -2,11 +2,12 @@ import React from "react";
 import { buyCar } from "../store";
 import { connect } from "react-redux";
 
-const CarsContainer = () => {
+const CarsContainer = (props) => {
+  const { availableCars, buyCar } = props;
   return (
     <>
-      <h2>Available Cars</h2>
-      <button>Buy Car</button>
+      <h2>Available Cars - {availableCars}</h2>
+      <button onClick={buyCar}>Buy Car</button>
     </>
   );
 };
