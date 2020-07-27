@@ -12,13 +12,13 @@ const MotorsContainer = (props) => {
   );
 };
 
-const mapStateToProps = ({ motors }) => {
+const mapStateToProps = ({ motors }, ownProps) => {
   return {
     availableMotors: motors.availableMotors,
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     buyMotor: () => dispatch(buyMotor()),
   };

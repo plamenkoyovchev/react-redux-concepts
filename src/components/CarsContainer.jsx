@@ -12,13 +12,13 @@ const CarsContainer = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
   return {
     availableCars: state.cars.availableCars,
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     buyCar: () => dispatch(buyCar()),
   };
